@@ -1,0 +1,52 @@
+.address-form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: auto;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.column {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+.address-form p {
+    font-size: 24px;
+}
+.input-with-label {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.form-btn-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+    margin-top: 40px;
+}
+input[type=text], select, input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid gainsboro;
+}
+@media(max-width: 1000px){
+    .address-form{
+      width: 100%;
+    }
+} 
+@media(max-width: 400px){
+    .column{
+      flex-direction: column;
+    }
+} 

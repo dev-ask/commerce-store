@@ -1,0 +1,10 @@
+.payment-card-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.divider {
+    height: 30px;
+    width: 100%;
+    border-top: 1px solid #eee;
+}

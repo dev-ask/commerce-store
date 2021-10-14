@@ -1,0 +1,26 @@
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: fit-content;
+}
+.payment-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 18px;
+}
+.product-summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #eee;
+}
+.secondary-text {
+    color: gray;
+}
+.separate {
+    height: 60px;
+    width: 100%;
+    display: block;
+}
