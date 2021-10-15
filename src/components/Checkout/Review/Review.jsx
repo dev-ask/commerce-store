@@ -8,7 +8,7 @@ const Review = ({ checkoutToken, shippingPrice }) => {
             <h2>Order Summary</h2>
             <div className="product-summary">
                     <div style={{flex: '3'}}></div>
-                    <div style={{flex: '1', display: 'flex'}}><p style={{margin: 'auto', fontWeight:'bold'}}>Quantity</p></div>
+                    <div style={{flex: '1', display: 'flex'}}><p style={{margin: 'auto', fontWeight:'bold'}}>Qty.</p></div>
                     <div style={{flex: '1'}}><p style={{float: 'right', fontWeight:'bold'}}>Price</p></div>
                 </div>
             {checkoutToken.live.line_items.map((product) => (

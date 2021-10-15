@@ -33,3 +33,17 @@
 .gutter-bottom {
 	margin-bottom: 10px;
 }
+.cart-remove-btn {
+	padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+	text-decoration: underline;
+    color: gray; 
+    border: none;
+	font-family: 'Karla', sans-serif;
+}

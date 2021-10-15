@@ -1,7 +1,7 @@
 .cart-summary {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 100%;
     height: fit-content;
 }
 .payment-total {
@@ -9,11 +9,12 @@
     justify-content: space-between;
     margin-top: 40px;
     font-size: 18px;
+    
 }
 .product-summary {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    width: 100%;
     border-bottom: 1px solid #eee;
 }
 .secondary-text {

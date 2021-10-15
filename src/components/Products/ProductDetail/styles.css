@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pd-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pd-img {
+    align-self: flex-start;
+    width: 65%;
+    max-height: 100%;
+    overflow: auto;
+    justify-items: center;
+}
+.pd-img img {
+    max-width: 100%;
+    height: auto;
+    -webkit-user-drag: none;
+}
+.pd-details {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 35%;
+    vertical-align: top;
+    padding-left: 50px;
+    padding-top: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -10px;
+}
+.pd-qty-selector {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 50px;
+}
+.pd-qty-selector button {
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #EEEEEE; 
+    color: black; 
+    border: 1px solid #E6E6E6;
+}
+.pd-qty-selector div {
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    height: 46px;
+    display: flex;
+    width: 100px;
+}
+.pd-qty-selector p {
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pd-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.pd-title {
+    font-family: 'Prata',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #292929;
+}
+.pd-price {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    font-size: 18px;
+}
+.pd-description {
+    padding-top: 30px;
+}
+.pd-social-buttons {
+    display: inline-block;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+.pd-social-buttons a {
+    margin-right: 36px;
+}
+.pd-add-btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #292929; 
+    color: white; 
+    border: none;
+}
+.pd-add-btn:hover{
+    opacity: 0.8;
+} 
+@media screen and (max-width: 960px) {
+    .pd-img{
+        width: 100%;
+        display: flex;
+    }
+    .pd-img img{
+        margin-right: 20px;
+    }
+    .pd-details {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+}

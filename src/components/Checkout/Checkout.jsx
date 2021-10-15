@@ -34,13 +34,17 @@ const Checkout = ({ cart, order, handleCaptureCheckout, errorMessage, setOrder }
     let Confirmation = () => order.customer ? (
         <div className="cart-page">
             <h2>Thank you for your purchase, {order.customer.firstname} {order.customer.lastname}</h2>
-            <div className="divider"></div>
-            <p>Order reference: {order.customer_reference}</p>
-            <Link to="/" style={{textDecoration: 'none'}}><button>Back to Home</button></Link>
+            <div className="divider-green"></div>
+            <p>Your payment was successfull and your order has been placed!</p>
+            <br/>
+            <p>Order reference number: <strong>{order.customer_reference}</strong></p>
+            <br/>
+            <p>You will shortly receive an email confirming your purchase along with receipt.</p>
+            <Link to="/" style={{textDecoration: 'none'}}><button className="secondary" style={{marginTop:'50px'}}>Back to Home</button></Link>
         </div>   
     ) : (
         <div>
-            <h1>Loading...</h1>
+            <h1>Placing order...</h1>
         </div>
     );
     

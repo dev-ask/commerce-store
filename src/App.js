@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Products, Cart, Checkout } from './components';
+import { Navigation, Products, Cart, Checkout } from './components';
+import ProductDetail from './components/Products/ProductDetail/ProductDetail';
 import { commerce } from './lib/commerce';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.css';
 
 const App = () => {
     const [ products, setProducts ] = useState([]);
@@ -62,29 +64,31 @@ const App = () => {
     return(
         <Router>
             <>
-                <Navbar totalItems={cart.total_items} />
-                <Switch>
-                    <Route exact path="/">
-                        <Products products={products} handleAddToCart={handleAddToCart} />
-                    </Route>
-                    <Route exact path="/cart">
-                        <Cart 
+                <Navigation totalItems={cart.total_items} />
+                <div className="main-section">
+                    <Switch>
+                        <Route exact path="/">
+                            <Products products={products} handleAddToCart={handleAddToCart} />
+                        </Route>
+                        <Route exact path="/cart">
+                            <Cart 
+                                cart={cart} 
+                                handleUpdateCartQty={handleUpdateCartQty}
+                                handleRemoveProduct={handleRemoveProduct}
+                                handleEmptyCart={handleEmptyCart}
+                            />
+                        </Route>
+                        <Route exact path="/checkout" >
+                            <Checkout 
                             cart={cart} 
-                            handleUpdateCartQty={handleUpdateCartQty}
-                            handleRemoveProduct={handleRemoveProduct}
-                            handleEmptyCart={handleEmptyCart}
-                        />
-                    </Route>
-                    <Route>
-                        <Checkout 
-                        exact path="/checkout" 
-                        cart={cart} 
-                        order={order}
-                        setOrder={setOrder}
-                        handleCaptureCheckout={handleCaptureCheckout} 
-                        errorMessage={errorMessage}/>
-                    </Route>
-                </Switch>
+                            order={order}
+                            setOrder={setOrder}
+                            handleCaptureCheckout={handleCaptureCheckout} 
+                            errorMessage={errorMessage}/>
+                        </Route>
+                        <Route path="/product/:id" component={ProductDetail}/>
+                    </Switch>
+                </div>
             </>
         </Router>
     );

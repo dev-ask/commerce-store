@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 700px;
     height: auto;
+    padding-top: 50px;
 }
 .form-container {
     display: flex;
@@ -48,5 +49,8 @@ input[type=text], select, input[type=number] {
 @media(max-width: 400px){
     .column{
       flex-direction: column;
+    }
+    .form-btn-group {
+        gap: 10px;
     }
 } 

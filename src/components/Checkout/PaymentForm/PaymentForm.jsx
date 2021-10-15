@@ -55,7 +55,7 @@ const PaymentForm = ({ checkoutToken, backStep, shippingData, handleCaptureCheck
     }
 
     return(
-        <>
+        <div className="pf-box">
             <Review checkoutToken={checkoutToken} shippingPrice={shippingPrice}/>
             <div className="divider"></div>
             <Elements stripe={stripePromise}>
@@ -71,7 +71,7 @@ const PaymentForm = ({ checkoutToken, backStep, shippingData, handleCaptureCheck
                     )}
                 </ElementsConsumer>
             </Elements>
-        </>
+        </div>
     )
 }
 
