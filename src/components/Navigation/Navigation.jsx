@@ -27,19 +27,16 @@ const Navigation = ({ totalItems }) => {
                 <span class="bar"></span>
             </div>
             <div className="nav-logo-link-box">
-                <Link to="/" style={{ textDecoration: 'none' }}><img src={siteLogo}/></Link>
+                <div className="nav-logo-center"><Link to="/" style={{ textDecoration: 'none' }}><img src={siteLogo}/></Link></div>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link" onClick={closeMenu}>Plants</a>
+                    <Link to="/plants" style={{ textDecoration: 'none' }}><a href="#" class="nav-link" onClick={closeMenu}>Plants</a></Link>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link" onClick={closeMenu}>Rugs</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" onClick={closeMenu}>Artwork</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" onClick={closeMenu}>Furniture</a>
+                        <a href="#" class="nav-link" onClick={closeMenu}>Lamps</a>
                     </li>
                 </ul>
             </div>
