@@ -41,12 +41,12 @@ const Slideshow = () => {
                 </div>
             </div>
             <div className="toggle-view fade">
-                <div className="slide">  
+                <div className="box2">  
                     <div className="ss-image">
                         <img src={rugs} />
                     </div>
-                    <div className="ss-info" style={{paddingRight:'0px', paddingLeft:'40px'}}>
-                        <p className="ss-title">Seasonal Rugs</p>
+                    <div className="box2-info">
+                        <p className="box2-title">Seasonal Rugs</p>
                         <p className="ss-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat lorem urna, id sodales massa convallis in. Nullam tincidunt dictum metus, ut gravida lectus commodo nec.</p>
                         <a className="ss-link">Shop Now <i class="fas fa-angle-right"></i></a>
                     </div>

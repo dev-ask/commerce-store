@@ -1,0 +1,143 @@
+.fp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    padding-top: 70px;
+    width: 100%;
+}
+.fp-box {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+.box2 {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.fp-image {
+    width: 50%;
+    max-height: 100%;
+}
+.fp-image img{
+    width: 100%;
+    height: auto;
+    -webkit-user-drag: none;
+}
+.fp-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+    padding-right: 40px;
+}
+.box2-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+    padding-left: 40px;
+}
+.fp-title {
+    font-size: 3.8vw;
+    font-family: 'Prata', serif;
+    font-weight: 700;
+    word-break: keep-all;
+}
+.box2-title {
+    font-size: 3.8vw;
+    font-family: 'Prata', serif;
+    font-weight: 700;
+    word-break: keep-all;
+}
+.fp-link {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fp-btn {
+    width: 10%;
+    cursor: pointer;
+    background-color: #fff; 
+    color: black; 
+    border: 0;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+}
+.fp-btn:hover {
+    opacity: 0.8;
+}
+.fp-btn.previous {
+    right: 10%;
+}
+.fp-btn.next {
+    right: 0;
+}
+.sm-title {
+    font-size: 35px;
+}
+.pad-l-r {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.fp-header {
+    align-self: center;
+    font-family: 'Prata', serif;
+}
+@media only screen and (max-width: 750px){
+    .pad-l-r {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .fp-box {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .fp-image {
+        width: 100%;
+        max-height: 100%;
+    }
+    .fp-info {
+        width: 100%;
+    }
+    .fp-btn {
+        position: relative;
+        border: 1px solid black;
+    }
+    .fp-btn-group {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .fp-btn.previous {
+        right: 0;
+    }
+    .box2-info {
+        padding-right: 40px;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .box2-title {
+        padding-top: 30px;
+    }
+    .pad-l-r {
+        padding-right: 40px;
+        padding-left: 0px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .fp-title, .box2-title {
+        font-size: 20px;
+    }
+    .fp-btn {
+        padding: 10px 15px;
+    }
+}
